@@ -32,7 +32,7 @@ Before launching your AB test, you can compute the needed sample size :
 6347
 ```
 
-After reaching the needed sample size, you can compare obtained A VS B means :
+After reaching the needed sample size, you can compare means obtained from A VS B :
 
 ```python
 >>> from leab import after
@@ -129,20 +129,6 @@ To finish, thanks to all of you who use or are going to use this lib, hope it he
 Feel free to contribute in any way you like, we're always open to new ideas and approaches. If you want to contribute to the code base please check out the [CONTRIBUTING.md](https://github.com/tlentali/leab/blob/master/CONTRIBUTING.md) file. Also take a look at the [issue tracker](https://github.com/tlentali/leab/issues) and see if anything takes your fancy.
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Again, contributions of any kind are welcome!
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/tlentali"><img src="https://avatars1.githubusercontent.com/u/19271960?s=400&u=02218d9c16e739f84027bc05aa685fb4073d27a8&v=4" width="100px;" alt="tlentali"/><br /><sub><b>tlentali</b></sub></a><br /><a href="#projectManagement-tlentali" title="Project Management">📆</a> <a href="https://github.com/tlentali/leab/commits?author=tlentali" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/JLouedec"><img src="https://avatars3.githubusercontent.com/u/15788750?s=400&v=4" width="100px;" alt="JLouedec"/><br /><sub><b>JLouedec</b></sub></a><br /><a href="https://github.com/tlentali/leab/commits?author=JLouedec" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/RomainSa"><img src="https://avatars3.githubusercontent.com/u/9036267?s=400&v=4" width="100px;" alt="RomainSa"/><br /><sub><b>RomainSa</b></sub></a><br /><a href="https://github.com/tlentali/leab/commits?author=RomainSa" title="Code">💻</a></td>
-  </tr>
-</table>
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## :scroll: License
 
