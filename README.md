@@ -5,7 +5,7 @@
     padding: 3px 6px;
     color: #000;
     font-size: 28px;>
-    <a href="#"><img src="./docs/_static/logo.svg" /></a></h1>
+    <a href="#"><img src="./docs/_static/logo.svg"  alt="le_AB_logo" /></a></h1>
 
 <p align="center">
   <!-- License -->
@@ -18,7 +18,7 @@
   <b>le AB</b> is a Python library for AB testing analysis.
 </p>
 
-## :zap: Quick start
+## ⚡️ Quick start
 
 Before launching your AB test, you can compute the needed sample size :
 
@@ -46,7 +46,7 @@ After reaching the needed sample size, you can compare means obtained from A VS 
 'Sample A mean is greater'
 ```
 
-## :hammer_and_wrench: Installation
+## 🛠 Installation
 
 :snake: You need to install Python 3.6 or above.
 
@@ -66,7 +66,7 @@ pip install git+https://github.com/tlentali/leab
 pip install git+ssh://git@github.com/tlentali/leab.git
 ```
 
-## :spoon: Philosophy
+## 🥄 Philosophy
 
 > "*Life is a sum of all our choices.*"  
 > **Albert Camus**
@@ -84,7 +84,7 @@ Strong statistical knowledge are required to handle it from start to end correct
 To answer those questions in a simple and robust way, we built `le AB`.  
 Lets Python do AB testing analysis !  
 
-## :fire: Features
+## 🔥 Features
 
 Here are some benefits of using `Le AB` :
 
@@ -98,18 +98,18 @@ Here are some benefits of using `Le AB` :
 - **sequential sampling** : How many conversions are needed for a sequential AB test ?
 - **html auto-report** : Generate a nice html AB test analysis report à la [Pandas-Profiling](https://github.com/pandas-profiling/pandas-profiling).
 
-## :link: Useful links
+## 🔗 Useful links
 
 - [Documentation](https://tlentali.github.io/leab/index.html)
   - [API reference](https://tlentali.github.io/leab/content/api.html)
   - [User guide](https://tlentali.github.io/leab/content/user-guide.html)
 - [Issue tracker](https://github.com/tlentali/leab/issues)
 
-## :clapper: Media
+## 🎬 Media
 
 - [Betclic Data Bi-monthly may 2020](okokok)
 
-## :pray: Thanks
+## 🙏 Thanks
 
 This project takes its inspiration from [Evan Miller](https://www.evanmiller.org/) great work, especially the following :
 
@@ -124,12 +124,12 @@ Have a look at [Creme-ml](https://github.com/creme-ml/creme), it's just amazingl
 
 To finish, thanks to all of you who use or are going to use this lib, hope it helps !
 
-## :vulcan_salute: Contributing
+## 🖖 Contributing
 
 Feel free to contribute in any way you like, we're always open to new ideas and approaches. If you want to contribute to the code base please check out the [CONTRIBUTING.md](https://github.com/tlentali/leab/blob/master/CONTRIBUTING.md) file. Also take a look at the [issue tracker](https://github.com/tlentali/leab/issues) and see if anything takes your fancy.
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Again, contributions of any kind are welcome!
 
-## :scroll: License
+## 📜 License
 
 ```le AB``` is free and open-source software licensed under the [MIT license](LICENCE).
