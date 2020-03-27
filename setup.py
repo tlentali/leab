@@ -1,13 +1,19 @@
+import io
+import os
+
+from setuptools import find_packages
 from setuptools import setup
+
 
 # Package meta-data.
 NAME = 'leab'
 DESCRIPTION = 'Lets Python do AB testing analysis.'
+LONG_DESCRIPTION_CONTENT_TYPE = 'text/markdown'
 URL = 'https://github.com/tlentali/leab'
 EMAIL = 'thomas.lentali@gmail.com'
 AUTHOR = 'Thomas Lentali'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 
 # Package requirements.
 base_packages = [
@@ -18,13 +24,21 @@ base_packages = [
         'matplotlib>=3.0.2',
     ]
 
+here = os.path.abspath(os.path.dirname(__file__))
+
+# Import the README and use it as the long-description.
+# Note: this will only work if 'README.rst' is present in your MANIFEST.in file!
+with io.open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
+    long_description = '\n' + f.read()
+
 setup(
     name=NAME,
-    packages=["leab"],
+    packages=find_packages(),
     version=VERSION,
     license="MIT",
     description=DESCRIPTION,
-    long_description=open("README.md").read(),
+    long_description=long_description,
+    long_description_content_type=LONG_DESCRIPTION_CONTENT_TYPE,
     author=AUTHOR,
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
