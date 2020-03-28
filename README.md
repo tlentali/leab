@@ -93,7 +93,7 @@ Here are some benefits of using `Le AB` :
 - **Rate of success** : Does the rate of success differ across two groups ?
 - **Average value** : Does the average value differ across two groups ?
 
-[Next release](https://github.com/tlentali/leab/projects/3) features :
+[Next release](https://github.com/tlentali/leab/projects/1) features :
 
 - **sequential sampling** : How many conversions are needed for a sequential AB test ?
 - **html auto-report** : Generate a nice html AB test analysis report à la [Pandas-Profiling](https://github.com/pandas-profiling/pandas-profiling).
@@ -107,7 +107,7 @@ Here are some benefits of using `Le AB` :
 
 ## 🎬 Media
 
-- [Betclic Data Bi-monthly may 2020](okokok)
+- [Betclic Data Bi-monthly may 2020](tmp)
 
 ## 🙏 Thanks
 
@@ -132,4 +132,4 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 ## 📜 License
 
-```le AB``` is free and open-source software licensed under the [MIT license](LICENCE).
+```le AB``` is free and open-source software licensed under the [MIT license](https://github.com/tlentali/leab/blob/master/LICENSE).
