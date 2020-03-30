@@ -48,10 +48,10 @@ After reaching the needed sample size, you can **compare means** obtained from A
 
 ## 🛠 Installation
 
-:snake: You need to install Python 3.6 or above.
+:snake: You need to install **Python 3.6** or above.
 
 Installation can be done by using `pip`.  
-There are [wheels available](https://pypi.org/project/leab/#files) for Linux, MacOS, and Windows.
+There are [wheels available](https://pypi.org/project/leab/#files) for **Linux**, **MacOS**, and **Windows**.
 
 ```bash
 pip install leab
