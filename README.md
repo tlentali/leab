@@ -20,7 +20,7 @@
 
 ## ⚡️ Quick start
 
-Before launching your AB test, you can compute the needed sample size :
+Before launching your AB test, you can compute the needed **sample size** :
 
 ```python
 >>> from leab import before
@@ -32,7 +32,7 @@ Before launching your AB test, you can compute the needed sample size :
 6347
 ```
 
-After reaching the needed sample size, you can compare means obtained from A VS B :
+After reaching the needed sample size, you can **compare means** obtained from A VS B :
 
 ```python
 >>> from leab import after
