@@ -1,16 +1,17 @@
 <h1 align="center";
-    font-family: Georgia, sans-serif; 
+    font-family: Georgia, sans-serif;
     text-decoration: none;
     background: #ffbdfb;
     padding: 3px 6px;
     color: #000;
     font-size: 28px;>
-    <a href="#"><img src="./docs/_static/logo.svg"  alt="le_AB_logo" /></a></h1>
-
+    <a href="#"><img src="./docs/_static/logo.svg"  alt="le_AB_logo" />
+    </a>
+</h1>
 <p align="center">
   <!-- License -->
   <a href="https://opensource.org/licenses/BSD-3-Clause">
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="bsd_3_license">
+    <img src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square" alt="bsd_3_license">
   </a>
 </p>
 
@@ -38,9 +39,9 @@ After reaching the needed sample size, you can **compare means** obtained from A
 >>> from leab import after
 >>> from leab import leDataset
 
->>> data = leDataset.SampleLeMean()
+>>> data = leDataset.SampleLeAverage()
 
->>> ab_test = after.leMean(data.A, data.B)
+>>> ab_test = after.leAverage(data.A, data.B)
 >>> teab_testst.get_verdict()
 
 'Sample A mean is greater'
