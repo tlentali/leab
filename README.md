@@ -147,4 +147,4 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 ## 📜 License
 
-```le AB``` is free and open-source software licensed under the [MIT license](https://github.com/tlentali/leab/blob/master/LICENSE).
+```le AB``` is free and open-source software licensed under the [3-clause BSD license](https://github.com/tlentali/leab/blob/master/LICENSE).
