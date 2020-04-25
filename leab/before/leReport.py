@@ -57,8 +57,12 @@ class leReport:
         )
 
     def fill_template(self):
-        env = Environment(loader='.')
-        template = env.get_template('template/leTemplate.html')
+
+        templateLoader = FileSystemLoader(searchpath="./template/")
+
+        env = Environment(loader=templateLoader)
+        TEMPLATE_FILE = 'leTemplate.html'
+        template = env.get_template(TEMPLATE_FILE)
         template_vars = {
             "title": "le Report",
             "html_plot_sample_size": self.html_plot_sample_size,
