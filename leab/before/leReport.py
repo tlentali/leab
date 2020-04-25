@@ -60,7 +60,7 @@ class leReport:
     def fill_template(self):
         
         root = Path(__file__).parent
-        path_template = root / 'template' /
+        path_template = root / 'template'
 
         env = Environment(loader=path_template)
         template = env.get_template('leTemplate.html')
