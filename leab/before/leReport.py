@@ -5,7 +5,6 @@ from jinja2 import Template
 from jinja2 import Environment
 from jinja2 import FileSystemLoader
 from jinja2 import PackageLoader
-from pathlib import Path
 from IPython.display import IFrame
 
 
@@ -58,12 +57,8 @@ class leReport:
         )
 
     def fill_template(self):
-        
-        root = Path(__file__).parent
-        path_template = root / 'template'
-
-        env = Environment(loader=path_template)
-        template = env.get_template('leTemplate.html')
+        env = Environment(loader='.')
+        template = env.get_template('template/leTemplate.html')
         template_vars = {
             "title": "le Report",
             "html_plot_sample_size": self.html_plot_sample_size,
