@@ -64,7 +64,7 @@ class TTestSample:
 
 class leAverage(TTestSample):
     """
-    Build leleAverageMean object.
+    Build leAverage object.
 
     Parameters:
 

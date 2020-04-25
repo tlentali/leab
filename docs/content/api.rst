@@ -14,7 +14,7 @@ Module leSuccess
    :members:
 
 Module leAverage
--------------
+----------------
 
 .. autoclass:: leab.after.leAverage.leAverage
    :members:
