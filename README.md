@@ -93,11 +93,12 @@ Here are some benefits of using `Le AB` :
 - **Test duration** : How many days are needed for my AB test ?
 - **Rate of success** : Does the rate of success differ across two groups ?
 - **Average value** : Does the average value differ across two groups ?
+- **html auto-report** : Generate a html report for the `sample size` part.
 
 [Next release](https://github.com/tlentali/leab/projects/1) features :
 
+- **html auto-report** : Generate a html report for the `after` part.
 - **sequential sampling** : How many conversions are needed for a sequential AB test ?
-- **html auto-report** : Generate a nice html AB test analysis report à la [Pandas-Profiling](https://github.com/pandas-profiling/pandas-profiling).
 
 ## 🔗 Useful links
 
@@ -108,7 +109,7 @@ Here are some benefits of using `Le AB` :
 
 ## 🎬 Media
 
-- [Betclic Data Bi-monthly may 2020](dispo_may_2020)
+- Betclic Data Bi-monthly may 2020 (dispo in may 2020)
 
 ## 🙏 Thanks
 
@@ -136,7 +137,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/tlentali"><img src="https://avatars1.githubusercontent.com/u/19271960?s=400&u=02218d9c16e739f84027bc05aa685fb4073d27a8&v=4" width="100px;" alt="tlentali"/><br /><sub><b>tlentali</b></sub></a><br /><a href="https://github.com/tlentali/leab/projects/1" title="Project Management">📆</a> <a href="https://github.com/tlentali/leab/commits?author=tlentali" title="Code">💻</a> <a href="https://github.com/tlentali/leab/commits?author=tlentali" title="Docs">📝</a></td>
+    <td align="center"><a href="https://github.com/tlentali"><img src="https://avatars1.githubusercontent.com/u/19271960?s=400&u=02218d9c16e739f84027bc05aa685fb4073d27a8&v=4" width="100px;" alt="tlentali"/><br /><sub><b>tlentali</b></sub></a><br /><a href="https://github.com/tlentali/leab/projects/1" title="Project Management">📆</a> <a href="https://github.com/tlentali/leab/commits?author=tlentali" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/JLouedec"><img src="https://avatars3.githubusercontent.com/u/15788750?s=400&v=4" width="100px;" alt="JLouedec"/><br /><sub><b>JLouedec</b></sub></a><br /><a href="https://github.com/tlentali/leab/commits?author=JLouedec" title="Docs">📝</a></td>
     <td align="center"><a href="https://github.com/RomainSa"><img src="https://avatars3.githubusercontent.com/u/9036267?s=400&v=4" width="100px;" alt="RomainSa"/><br /><sub><b>RomainSa</b></sub></a><br /><a href="https://github.com/tlentali/leab/commits?author=RomainSa" title="Docs">📝</a></td>
   </tr>
