@@ -13,7 +13,7 @@ URL = 'https://github.com/tlentali/leab'
 EMAIL = 'thomas.lentali@gmail.com'
 AUTHOR = 'Thomas Lentali'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.1.1'
+VERSION = '0.1.2'
 
 # Package requirements.
 base_packages = [
@@ -22,6 +22,7 @@ base_packages = [
         'pandas>=1.0.3',
         'statsmodels>=0.11.1',
         'matplotlib>=3.0.2',
+        'plotly>=4.6.0',
     ]
 
 here = os.path.abspath(os.path.dirname(__file__))
