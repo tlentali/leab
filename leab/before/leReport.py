@@ -58,10 +58,10 @@ class leReport:
 
     def fill_template(self):
 
-        templateLoader = FileSystemLoader(searchpath="../templates")
+        templateLoader = FileSystemLoader(searchpath="templates")
 
         env = Environment(loader=templateLoader)
-        TEMPLATE_FILE = 'leTemplate.html'
+        TEMPLATE_FILE = 'templates/leTemplate.html'
         template = env.get_template(TEMPLATE_FILE)
         template_vars = {
             "title": "le Report",
