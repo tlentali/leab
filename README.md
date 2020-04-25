@@ -95,6 +95,10 @@ Here are some benefits of using `Le AB` :
 - **Average value** : Does the average value differ across two groups ?
 - **html auto-report** : Generate a html report for the `sample size` part.
 
+<p align="center">
+  <a href="#"><img src="./docs/_static/sample_report.gif" width="700"></a>
+</p>
+
 [Next release](https://github.com/tlentali/leab/projects/1) features :
 
 - **html auto-report** : Generate a html report for the `after` part.
