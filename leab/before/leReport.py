@@ -60,10 +60,10 @@ class leReport:
     def fill_template(self):
         
         root = Path(__file__).parent
-        template_1 = root / 'template' / 'leTemplate.html'
+        path_template = root / 'template' /
 
-        env = Environment(loader='.')
-        template = env.get_template(template_1)
+        env = Environment(loader=path_template)
+        template = env.get_template('leTemplate.html')
         template_vars = {
             "title": "le Report",
             "html_plot_sample_size": self.html_plot_sample_size,
