@@ -35,8 +35,10 @@ with io.open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
 setup(
     name=NAME,
     packages=find_packages(),
+    package_data = {
+        'html_template': ['leab/before/templates/*.html'],
+        }
     version=VERSION,
-    include_package_data=True,
     license="3-clause BSD license",
     description=DESCRIPTION,
     long_description=long_description,
