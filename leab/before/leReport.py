@@ -63,7 +63,7 @@ class leReport:
         templateLoader = FileSystemLoader(searchpath=BASE_DIR + "/templates")
 
         env = Environment(loader=templateLoader)
-        TEMPLATE_FILE = 'templates/leTemplate.html'
+        TEMPLATE_FILE = 'leTemplate.html'
         template = env.get_template(TEMPLATE_FILE)
         template_vars = {
             "title": "le Report",
