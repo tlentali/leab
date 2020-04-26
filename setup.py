@@ -36,7 +36,7 @@ setup(
     name=NAME,
     packages=find_packages(),
     package_data = {
-        'before': ['leTemplate.html'],
+        'leab': ['before/leTemplate.html'],
         },
     version=VERSION,
     license="3-clause BSD license",
