@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        body {
+            font-family: Helvetica, Geneva, Arial,
+                SunSans-Regular, sans-serif;
+            color: rgb(44, 40, 44);
+            background-color: #ffffff
+        }
+
+        h2 {
+            font-family: Helvetica, Geneva, Arial,
+                SunSans-Regular, sans-serif;
+            color: rgb(248, 240, 248);
+            position: center
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 3px;
+            text-align: center;
+            font-size: 35px;
+            color: #ccc;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            background: #ccc;
+            text-align: center;
+            padding: 0px;
+            height: 300px;
+        }
+
+        article {
+            float: left;
+            padding: 0px;
+            width: 70%;
+            text-align: center;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+            text-align: center;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            font-size: 11px;
+            color: white;
+        }
+
+        inner {
+            display:inline-block;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 1000px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>{{ title }}</h2>
+    </header>
+
+    <section>
+        <nav>
+            <p align="center">Sample size per variation :<br></p>
+            <inner>
+            {{ html_plot_sample_size }}
+            </inner>
+        </nav>
+
+        <article>
+            <p align="center">Baseline conversion rate and Minimum Detectable Effect :<br></p>
+            <inner>
+            {{ html_plot_baseline_conversion_rate }}
+            </inner>
+        </article>
+    </section>
+
+    <footer>
+        <p>Made with 💙 by <a href="https://tlentali.github.io/leab/">le AB</a>.
+    </footer>
+
+</body>
+
+</html>

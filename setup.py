@@ -35,8 +35,11 @@ with io.open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
 setup(
     name=NAME,
     packages=find_packages(),
+    package_data = {
+        'leab': ['before/leTemplate.html'],
+        },
     version=VERSION,
-    license="MIT",
+    license="3-clause BSD license",
     description=DESCRIPTION,
     long_description=long_description,
     long_description_content_type=LONG_DESCRIPTION_CONTENT_TYPE,
@@ -48,7 +51,7 @@ setup(
     install_requires=base_packages,
     classifiers=[
     # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
-    'License :: OSI Approved :: MIT License',
+    'License :: OSI Approved :: BSD License',
     'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3.6',
     'Programming Language :: Python :: 3.7',

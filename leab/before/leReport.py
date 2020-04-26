@@ -59,7 +59,7 @@ class leReport:
     def fill_template(self):
 
         from pathlib import Path 
-        BASE_DIR = str(Path(__file__).resolve()) + "/templates"
+        BASE_DIR = str(Path(__file__).resolve().parent)
         print(BASE_DIR)
         templateLoader = FileSystemLoader(searchpath=BASE_DIR)
 
