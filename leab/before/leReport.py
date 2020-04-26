@@ -6,7 +6,7 @@ from jinja2 import Environment
 from jinja2 import FileSystemLoader
 from jinja2 import PackageLoader
 from IPython.display import IFrame
-from leab.before import templates
+
 
 class leReport:
     def __init__(
