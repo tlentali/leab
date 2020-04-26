@@ -58,7 +58,9 @@ class leReport:
 
     def fill_template(self):
 
-        templateLoader = FileSystemLoader(searchpath="templates")
+        from pathlib import Path 
+        BASE_DIR = str(Path(__file__).resolve())
+        templateLoader = FileSystemLoader(searchpath=BASE_DIR + "/templates")
 
         env = Environment(loader=templateLoader)
         TEMPLATE_FILE = 'templates/leTemplate.html'
