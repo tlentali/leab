@@ -13,8 +13,8 @@ Module leSuccess
 .. autoclass:: leab.after.leSuccess.leSuccess
    :members:
 
-Module leMean
--------------
+Module leAverage
+----------------
 
-.. autoclass:: leab.after.leMean.leMean
+.. autoclass:: leab.after.leAverage.leAverage
    :members:

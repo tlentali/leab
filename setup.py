@@ -13,7 +13,7 @@ URL = 'https://github.com/tlentali/leab'
 EMAIL = 'thomas.lentali@gmail.com'
 AUTHOR = 'Thomas Lentali'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.1.1'
+VERSION = '0.1.2'
 
 # Package requirements.
 base_packages = [
@@ -22,6 +22,7 @@ base_packages = [
         'pandas>=1.0.3',
         'statsmodels>=0.11.1',
         'matplotlib>=3.0.2',
+        'plotly>=4.6.0',
     ]
 
 here = os.path.abspath(os.path.dirname(__file__))
@@ -34,8 +35,11 @@ with io.open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
 setup(
     name=NAME,
     packages=find_packages(),
+    package_data = {
+        'leab': ['before/leTemplate.html', 'leDataset/data/*.csv'],
+        },
     version=VERSION,
-    license="MIT",
+    license="3-clause BSD license",
     description=DESCRIPTION,
     long_description=long_description,
     long_description_content_type=LONG_DESCRIPTION_CONTENT_TYPE,
@@ -47,7 +51,7 @@ setup(
     install_requires=base_packages,
     classifiers=[
     # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
-    'License :: OSI Approved :: MIT License',
+    'License :: OSI Approved :: BSD License',
     'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3.6',
     'Programming Language :: Python :: 3.7',

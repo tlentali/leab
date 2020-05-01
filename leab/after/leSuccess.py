@@ -8,9 +8,9 @@ class Chi2Sample:
     def __init__(self, sample: pd.DataFrame, confidence_level: float = 0.95):
         self.sample = sample
         self.confidence_level = confidence_level
-        self.summary()
+        self.compute()
 
-    def summary(self) -> None:
+    def compute(self) -> None:
         self.get_success()
         self.get_trial()
         self.get_confidence_interval()
@@ -72,17 +72,17 @@ class leSuccess(Chi2Sample):
         self.confidence_level = confidence_level
         self.sample_A = Chi2Sample(sample_A, self.confidence_level)
         self.sample_B = Chi2Sample(sample_B, self.confidence_level)
-        self.summary()
+        self.compute()
 
-    def summary(self) -> None:
-        self.get_contingency_table()
-        self.get_observed_values()
-        self.get_expected_values()
-        self.get_chi_square_statistic()
-        self.get_degree_of_freedom()
-        self.get_p_value()
+    def compute(self) -> None:
+        self._get_contingency_table()
+        self._get_observed_values()
+        self._get_expected_values()
+        self._get_chi_square_statistic()
+        self._get_degree_of_freedom()
+        self._get_p_value()
 
-    def get_contingency_table(self) -> None:
+    def _get_contingency_table(self) -> None:
         sample_A_value_counts = self.sample_A.sample["success"].value_counts()
         sample_B_value_counts = self.sample_B.sample["success"].value_counts()
         self.contingency_table = pd.DataFrame(
@@ -92,14 +92,14 @@ class leSuccess(Chi2Sample):
         self.contingency_table.index = ["sample_A", "sample_B"]
         self.contingency_table.columns = ["fail", "success"]
 
-    def get_observed_values(self) -> None:
+    def _get_observed_values(self) -> None:
         self.observed_values = self.contingency_table.values
 
-    def get_expected_values(self) -> None:
+    def _get_expected_values(self) -> None:
         b = scipy.stats.chi2_contingency(self.contingency_table)
         self.expected_values = b[3]
 
-    def get_chi_square_statistic(self) -> None:
+    def _get_chi_square_statistic(self) -> None:
         chi_square = sum(
             [
                 (o - e) ** 2.0 / e
@@ -108,12 +108,12 @@ class leSuccess(Chi2Sample):
         )
         self.chi_square_statistic = chi_square[0] + chi_square[1]
 
-    def get_degree_of_freedom(self) -> None:
+    def _get_degree_of_freedom(self) -> None:
         no_of_rows = len(self.contingency_table.iloc[0:2, 0])
         no_of_columns = len(self.contingency_table.iloc[0, 0:2])
         self.degree_of_freedom = (no_of_rows - 1) * (no_of_columns - 1)
 
-    def get_p_value(self) -> None:
+    def _get_p_value(self) -> None:
         self.p_value = 1 - chi2.cdf(
             x=self.chi_square_statistic, df=self.degree_of_freedom
         )

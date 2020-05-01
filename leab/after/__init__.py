@@ -1,8 +1,8 @@
 from .leSuccess import leSuccess
-from .leMean import leMean
+from .leAverage import leAverage
 
 __all__ = [
     'leSuccess',
-    'leMean'
+    'leAverage'
 ]
 

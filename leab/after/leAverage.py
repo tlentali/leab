@@ -8,9 +8,9 @@ class TTestSample:
     def __init__(self, sample: pd.DataFrame, confidence_level: float):
         self.sample = sample
         self.confidence_level = confidence_level
-        self.summary()
+        self.compute()
 
-    def summary(self) -> None:
+    def compute(self) -> None:
         self.get_mean()
         self.get_std()
         self.get_count()
@@ -62,9 +62,9 @@ class TTestSample:
         pass
 
 
-class leMean(TTestSample):
+class leAverage(TTestSample):
     """
-    Build leMean object.
+    Build leAverage object.
 
     Parameters:
 
@@ -79,8 +79,8 @@ class leMean(TTestSample):
             >>> from leab import after
             >>> from leab import leDataset
 
-            >>> data = leDataset.SampleLeMean()
-            >>> ab_test = after.leMean(data.A, data.B)
+            >>> data = leDataset.SampleLeAverage()
+            >>> ab_test = after.leAverage(data.A, data.B)
 
             >>> ab_test.sample_A.confidence_interval
 
@@ -99,29 +99,29 @@ class leMean(TTestSample):
         self.confidence_level = confidence_level
         self.sample_A = TTestSample(sample_A, confidence_level)
         self.sample_B = TTestSample(sample_B, confidence_level)
-        self.compute_ttest()
+        self.compute()
 
-    def compute_ttest(self) -> None:
-        self.get_diff_mean()
-        self.get_diff_variance()
-        self.get_diff_df()
-        self.get_diff_mean_stddev()
-        self.get_t()
-        self.get_x()
-        self.get_p_value()
-        self.get_d()
-        self.get_SE()
+    def compute(self) -> None:
+        self._get_diff_mean()
+        self._get_diff_variance()
+        self._get_diff_df()
+        self._get_diff_mean_stddev()
+        self._get_t()
+        self._get_x()
+        self._get_p_value()
+        self._get_d()
+        self._get_SE()
 
-    def get_diff_mean(self) -> None:
+    def _get_diff_mean(self) -> None:
         self.diff_mean = self.sample_A.mean - self.sample_B.mean
 
-    def get_diff_variance(self) -> None:
+    def _get_diff_variance(self) -> None:
         self.diff_variance = (
             self.sample_A.variance / self.sample_A.count_elt
             + self.sample_B.variance / self.sample_B.count_elt
         )
 
-    def get_diff_df(self) -> None:
+    def _get_diff_df(self) -> None:
         self.diff_df = (
             self.diff_variance
             * self.diff_variance
@@ -135,22 +135,22 @@ class leMean(TTestSample):
             )
         )
 
-    def get_diff_mean_stddev(self) -> None:
+    def _get_diff_mean_stddev(self) -> None:
         self.diff_mean_stddev = np.sqrt(self.diff_variance)
 
-    def get_t(self) -> None:
+    def _get_t(self) -> None:
         self.t = self.diff_mean / self.diff_mean_stddev
 
-    def get_x(self) -> None:
+    def _get_x(self) -> None:
         self.x = self.diff_df / (self.diff_df + self.t * self.t)
 
-    def get_p_value(self) -> None:
+    def _get_p_value(self) -> None:
         self.p_value = sc.betainc(self.diff_df / 2, 0.5, self.x)
 
-    def get_d(self) -> None:
+    def _get_d(self) -> None:
         self.d = self.diff_mean
 
-    def get_SE(self) -> None:
+    def _get_SE(self) -> None:
         self.SE = self.diff_mean_stddev
 
     def plot_difference_of_means(self):

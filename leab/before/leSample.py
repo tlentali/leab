@@ -1,6 +1,7 @@
 import numpy as np
 from scipy.stats import norm
 
+from .leReport import leReport
 
 class leSample:
     """
@@ -44,6 +45,7 @@ class leSample:
         self.alpha = significance_level
         self.beta = 1 - statistical_power
         self.n = None
+        self.size = self.get_size()
 
     def absolute_or_relative(self) -> None:
         """
@@ -151,3 +153,12 @@ class leSample:
                 np.round(self.n / (self.avg_daily_total_visitor / self.nb_split))
             )
         return self.duration
+
+    def report(self, path: str = "leReport.html"):
+        build_report = leReport( 
+            baseline_conversion_rate = self.conversion_rate*100,
+            minimum_detectable_effect = self.min_detectable_effect*100,
+            sample_size = self.n,
+            path = path,
+        )
+        return build_report.build_leReport()
