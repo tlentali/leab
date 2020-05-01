@@ -36,7 +36,7 @@ setup(
     name=NAME,
     packages=find_packages(),
     package_data = {
-        'leab': ['before/leTemplate.html'],
+        'leab': ['before/leTemplate.html', 'leDataset/data/*.csv'],
         },
     version=VERSION,
     license="3-clause BSD license",

@@ -8,7 +8,7 @@ class SampleLeAverage:
     """
     def __init__(self):
 
-        root = Path(__file__).parent.parent.parent
+        root = Path(__file__).parent
         file_1 = root / 'data' / 'evan_miller_ttest_default_1.csv'
         file_2 = root / 'data' / 'evan_miller_ttest_default_2.csv'
 
