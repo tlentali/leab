@@ -60,7 +60,6 @@ class leReport:
 
         from pathlib import Path 
         BASE_DIR = str(Path(__file__).resolve().parent)
-        print(BASE_DIR)
         templateLoader = FileSystemLoader(searchpath=BASE_DIR)
 
         env = Environment(loader=templateLoader)

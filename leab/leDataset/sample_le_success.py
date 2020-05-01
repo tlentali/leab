@@ -8,7 +8,7 @@ class SampleLeSuccess:
     """
     def __init__(self):
 
-        root = Path(__file__).parent.parent.parent
+        root = Path(__file__).parent
         file_A = root / 'data' / 'evan_miller_chi2_default_1.csv'
         file_B = root / 'data' / 'evan_miller_chi2_default_2.csv'
         file_C = root / 'data' / 'evan_miller_chi2_default_3.csv'
