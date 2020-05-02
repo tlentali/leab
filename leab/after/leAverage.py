@@ -159,8 +159,8 @@ class leAverage(TTestSample):
     def get_verdict(self) -> None:
         if self.p_value < 1 - self.confidence_level:
             if self.sample_A.mean > self.sample_B.mean:
-                print("Sample A mean is greater")
+                return("Sample A mean is greater")
             else:
-                print("Sample B mean is greater")
+                return("Sample B mean is greater")
         else:
-            print("No significant difference")
+            return("No significant difference")
