@@ -25,7 +25,8 @@ class TTestSample:
 
     def get_std(self) -> None:
         # using the std from Pandas doesn't match the expected result
-        # we use stdev from statistics instead
+        # we use stdev from statistics instead 
+        # (https://stackoverflow.com/questions/24984178/different-std-in-pandas-vs-numpy)
         self.std = statistics.stdev(self.sample.iloc[:, 0].tolist())
 
     def get_count(self) -> None:
