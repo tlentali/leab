@@ -1,12 +1,8 @@
 language: python
+
 python:
-  - 3.6
-  - 3.7
-  - 3.8
-before_install:
-  - python --version
-  - pip install -U pip
-  - pip install -U pytest
-install:
-  - pip install -e . # install package + test dependencies
-script: pytest # run tests
+ - "3.6"
+
+install: pip install -e .
+
+script: pytest
