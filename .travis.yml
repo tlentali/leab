@@ -15,8 +15,5 @@ install:
   - pip install -r requirements.txt
   - pip install -e .
 
-script: pytest --cov-report term --cov=investpy tests/
-
-after_success:
-  - codecov
+script: pytest
 
