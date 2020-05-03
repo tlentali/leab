@@ -3,6 +3,12 @@ language: python
 python:
  - "3.6"
 
+before_install:
+ - python --version
+ - pip install -U pip
+ - pip install -U pytest
+ - pip install --upgrade setuptools
+
 install: 
   - pip install -r requirements.txt
   - pip install -e .
