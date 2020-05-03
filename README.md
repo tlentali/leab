@@ -5,10 +5,14 @@
     padding: 3px 6px;
     color: #000;
     font-size: 28px;>
-    <a href="#"><img src="./docs/_static/logo.svg"  alt="le_AB_logo" />
+    <a href="#"><img src="https://raw.githubusercontent.com/tlentali/leab/master/docs/_static/logo.svg"  alt="le_AB_logo" />
     </a>
 </h1>
 <p align="center">
+  <!-- Travis -->
+  <a href="https://travis-ci.org/tlentali/leab">
+    <img src="https://travis-ci.org/tlentali/leab.svg?style=flat-square" alt="travis">
+  </a>
   <!-- License -->
   <a href="https://opensource.org/licenses/BSD-3-Clause">
     <img src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square" alt="bsd_3_license">
