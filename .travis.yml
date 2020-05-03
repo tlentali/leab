@@ -8,5 +8,5 @@ before_install:
   - pip install -U pip
   - pip install -U pytest
 install:
-  - pip install . # install package + test dependencies
+  - pip install -e . # install package + test dependencies
 script: pytest # run tests
