@@ -19,5 +19,7 @@ install:
   - pip install -e .
 
 script: 
-  - pytest
+  - pytest --cov-report term --cov=leab tests/
 
+after_success:
+  - codecov
