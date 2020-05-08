@@ -102,7 +102,7 @@ Here are some benefits of using `Le AB` :
 - **Test duration** : How many days are needed for my AB test ?
 - **Rate of success** : Does the rate of success differ across two groups ?
 - **Average value** : Does the average value differ across two groups ?
-- **html auto-report** : Generate a html report for the `sample size` part.
+- **html auto-report** : Generate a html report ([example](https://tlentali.github.io/leReport/index.html)) for the `sample size` part.
 
 <p align="center">
   <a href="#"><img src="./docs/_static/sample_report.gif" width="700"></a>
