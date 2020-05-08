@@ -5,10 +5,19 @@
     padding: 3px 6px;
     color: #000;
     font-size: 28px;>
-    <a href="#"><img src="./docs/_static/logo.svg"  alt="le_AB_logo" />
+    <a href="#"><img src="https://raw.githubusercontent.com/tlentali/leab/master/docs/_static/logo.svg"  alt="le_AB_logo" />
     </a>
 </h1>
 <p align="center">
+  <!-- Travis -->
+  <a href="https://travis-ci.org/tlentali/leab">
+    <img src="https://travis-ci.org/tlentali/leab.svg?style=flat-square" 
+    alt="travis">
+  </a>
+  <!-- Codecov -->
+  <a href="https://codecov.io/gh/tlentali/leab">
+    <img src="https://img.shields.io/codecov/c/gh/tlentali/leab.svg?style=flat-square" alt="codecov">
+  </a>
   <!-- License -->
   <a href="https://opensource.org/licenses/BSD-3-Clause">
     <img src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square" alt="bsd_3_license">
@@ -93,7 +102,7 @@ Here are some benefits of using `Le AB` :
 - **Test duration** : How many days are needed for my AB test ?
 - **Rate of success** : Does the rate of success differ across two groups ?
 - **Average value** : Does the average value differ across two groups ?
-- **html auto-report** : Generate a html report for the `sample size` part.
+- **html auto-report** : Generate a html report ([example](https://tlentali.github.io/leReport/index.html)) for the `sample size` part.
 
 <p align="center">
   <a href="#"><img src="./docs/_static/sample_report.gif" width="700"></a>

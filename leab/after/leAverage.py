@@ -25,7 +25,8 @@ class TTestSample:
 
     def get_std(self) -> None:
         # using the std from Pandas doesn't match the expected result
-        # we use stdev from statistics instead
+        # we use stdev from statistics instead 
+        # (https://stackoverflow.com/questions/24984178/different-std-in-pandas-vs-numpy)
         self.std = statistics.stdev(self.sample.iloc[:, 0].tolist())
 
     def get_count(self) -> None:
@@ -159,8 +160,8 @@ class leAverage(TTestSample):
     def get_verdict(self) -> None:
         if self.p_value < 1 - self.confidence_level:
             if self.sample_A.mean > self.sample_B.mean:
-                print("Sample A mean is greater")
+                return("Sample A mean is greater")
             else:
-                print("Sample B mean is greater")
+                return("Sample B mean is greater")
         else:
-            print("No significant difference")
+            return("No significant difference")

@@ -124,8 +124,8 @@ class leSuccess(Chi2Sample):
                 self.sample_A.success / self.sample_A.trial
                 > self.sample_B.success / self.sample_B.trial
             ):
-                print("Sample A is more successful")
+                return("Sample A is more successful")
             else:
-                print("Sample B is more successful")
+                return("Sample B is more successful")
         else:
-            print("No significant difference")
+            return("No significant difference")
