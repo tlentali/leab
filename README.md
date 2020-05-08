@@ -11,7 +11,12 @@
 <p align="center">
   <!-- Travis -->
   <a href="https://travis-ci.org/tlentali/leab">
-    <img src="https://travis-ci.org/tlentali/leab.svg?style=flat-square" alt="travis">
+    <img src="https://travis-ci.org/tlentali/leab.svg?style=flat-square" 
+    alt="travis">
+  </a>
+  <!-- Codecov -->
+  <a href="https://codecov.io/gh/tlentali/leab">
+    <img src="https://img.shields.io/codecov/c/gh/tlentali/leab.svg?style=flat-square" alt="codecov">
   </a>
   <!-- License -->
   <a href="https://opensource.org/licenses/BSD-3-Clause">
