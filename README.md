@@ -32,14 +32,14 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1R3z8uoCvpqhVfH0X6eU_-TaRRPbKUqbM?usp=sharing)
 
-Before launching your AB test, you can compute the needed **sample size** :
+Before launching your AB test, you can compute the needed **sample size** per variation :
 
 ```python
 >>> from leab import before
 
 >>> ab_test = before.leSample(conversion_rate=20,
 ...                           min_detectable_effect=2)
->>> ab_test.get_size()
+>>> ab_test.get_size_per_variation()
 
 6347
 ```

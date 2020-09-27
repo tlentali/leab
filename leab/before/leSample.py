@@ -1,3 +1,4 @@
+
 import numpy as np
 from scipy.stats import norm
 
@@ -22,7 +23,7 @@ class leSample:
 
             >>> ab_test = before.leSample(conversion_rate=20, 
             ...                           min_detectable_effect=2)
-            >>> ab_test.get_size()
+            >>> ab_test.get_size_per_variation()
             6347
 
             >>> ab_test.get_duration(avg_daily_total_visitor=1000)
@@ -45,7 +46,7 @@ class leSample:
         self.alpha = significance_level
         self.beta = 1 - statistical_power
         self.n = None
-        self.size = self.get_size()
+        self.size = self.get_size_per_variation()
 
     def absolute_or_relative(self) -> None:
         """
@@ -115,11 +116,11 @@ class leSample:
             )
         )
 
-    def get_size(self) -> int:
+    def get_size_per_variation(self) -> int:
         """
         Calls all methods used to get the size needed per group to get significance on the test.
 
-        Returns: 
+        Returns:
 
             Minimum sample size required per group according to metric denominator.
         """
@@ -127,6 +128,17 @@ class leSample:
         self._get_sds()
         self._compute_n()
         return self.n
+
+    def get_size_total(self) -> int:
+        """
+        Calls all methods used to get the total size needed to get significance on the test.
+
+        Returns:
+
+            Minimum total sample size required according to metric denominator.
+        """
+        self.total_sample_size = self.n * 2
+        return self.total_sample_size
 
     def get_duration(self, avg_daily_total_visitor: int, nb_split: int = 2) -> int:
         """
@@ -148,7 +160,7 @@ class leSample:
                 np.round(self.n / (self.avg_daily_total_visitor / self.nb_split))
             )
         else:
-            self.get_size()
+            self.get_size_per_variation()
             self.duration = int(
                 np.round(self.n / (self.avg_daily_total_visitor / self.nb_split))
             )
