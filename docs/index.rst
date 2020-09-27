@@ -4,8 +4,8 @@
 
 |
 
-Introduction
-============
+Welcome!
+========
 
 | **Le AB** is a Python library for AB testing analysis made with |:blue_heart:| from Bordeaux |:wine_glass:|.
 |
