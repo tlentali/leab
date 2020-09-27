@@ -30,6 +30,8 @@
 
 ## ⚡️ Quick start
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1R3z8uoCvpqhVfH0X6eU_-TaRRPbKUqbM?usp=sharing)
+
 Before launching your AB test, you can compute the needed **sample size** :
 
 ```python
