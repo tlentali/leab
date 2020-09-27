@@ -26,7 +26,7 @@ copyright = '2020, tlentali'
 author = 'tlentali'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1.2'
+release = '0.1.4'
 
 autodoc_mock_imports = ['tkinter']
 # -- General configuration ---------------------------------------------------
@@ -34,9 +34,9 @@ autodoc_mock_imports = ['tkinter']
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['m2r', 
-              'sphinx.ext.autodoc', 
-              'sphinx.ext.coverage', 
+extensions = ['m2r',
+              'sphinx.ext.autodoc',
+              'sphinx.ext.coverage',
               'sphinx.ext.viewcode',
               'sphinx_copybutton',
               'sphinxemoji.sphinxemoji']
