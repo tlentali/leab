@@ -129,7 +129,7 @@ class leSample:
         self._compute_n()
         return self.n
 
-    def get_size_total(self) -> int:
+    def get_total_size(self) -> int:
         """
         Calls all methods used to get the total size needed to get significance on the test.
 
