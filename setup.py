@@ -13,7 +13,7 @@ URL = 'https://github.com/tlentali/leab'
 EMAIL = 'thomas.lentali@gmail.com'
 AUTHOR = 'Thomas Lentali'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.1.2'
+VERSION = '0.1.4'
 
 # Package requirements.
 base_packages = [
