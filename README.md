@@ -122,10 +122,6 @@ Here are some benefits of using `Le AB` :
   - [User guide](https://tlentali.github.io/leab/content/user-guide.html)
 - [Issue tracker](https://github.com/tlentali/leab/issues)
 
-## 🎬 Media
-
-- Betclic Data Bi-monthly may 2020 (dispo in may 2020)
-
 ## 🙏 Thanks
 
 This project takes its inspiration from [Evan Miller](https://www.evanmiller.org/) great work, especially the following :
