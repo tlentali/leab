@@ -26,7 +26,6 @@ jobs:
       run: |
         source .venv/bin/activate
         uv sync
-        uv add leab
 
     - name: Launch tests
       run: |
