@@ -1,0 +1,26 @@
+name: Python Tests
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install uv
+      run: |
+        curl -Ls https://astral.sh/uv/install.sh | bash
+        echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+    - name: Install dépendancies using uv
+      run: uv pip install -r <(uv pip compile pyproject.toml)
+
+    - name: Launch tests with pytest
+      run: pytest

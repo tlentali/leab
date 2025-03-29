@@ -9,11 +9,6 @@
     </a>
 </h1>
 <p align="center">
-  <!-- Travis -->
-  <a href="https://travis-ci.org/tlentali/leab">
-    <img src="https://travis-ci.org/tlentali/leab.svg?style=flat-square" 
-    alt="travis">
-  </a>
   <!-- Codecov -->
   <a href="https://codecov.io/gh/tlentali/leab">
     <img src="https://img.shields.io/codecov/c/gh/tlentali/leab.svg?style=flat-square" alt="codecov">
