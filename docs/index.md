@@ -2,7 +2,7 @@
 
 ---
 
-`LeAB` is a Python library for AB testing analysis made with 💙 from Bordeaux 🍷 and Montréal 🍁.
+`LeAB` is a Python library for AB testing analysis.
 
 Get ready to take a decision !
 
@@ -38,5 +38,6 @@ A/B testing is a powerful tool, but often requires stitching together multiple t
 - 🔍 Ensure statistical rigor with built-in checks
 - 🧪 Support simulations and power analysis
 
-
 Let the data speak—with confidence.
+
+Made with 💙 from Bordeaux 🍷 and Montréal 🍁.
