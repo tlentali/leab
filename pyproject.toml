@@ -21,3 +21,8 @@ dev = [
     "pylint>=3.3.6",
     "pytest>=8.3.5",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
