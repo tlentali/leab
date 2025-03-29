@@ -25,7 +25,7 @@ jobs:
     - name: Activer le venv et installer les dépendances
       run: |
         source .venv/bin/activate
-        uv pip install -r <(uv pip compile pyproject.toml)
+        uv pip install -r <(uv pip compile -g dev pyproject.toml)
 
     - name: Lancer les tests
       run: |
