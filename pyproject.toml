@@ -1,0 +1,23 @@
+[project]
+name = "leab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.2.4",
+    "pandas>=2.2.3",
+    "scipy>=1.15.2",
+    "statsmodels>=0.14.4",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "jupyter>=1.1.1",
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.6.9",
+    "mkdocstrings[python]>=0.29.0",
+    "pylint>=3.3.6",
+    "pytest>=8.3.5",
+]
