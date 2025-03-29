@@ -8,16 +8,6 @@
     <a href="#"><img src="https://raw.githubusercontent.com/tlentali/leab/master/docs/_static/logo.svg"  alt="le_AB_logo" />
     </a>
 </h1>
-<p align="center">
-  <!-- Codecov -->
-  <a href="https://codecov.io/gh/tlentali/leab">
-    <img src="https://img.shields.io/codecov/c/gh/tlentali/leab.svg?style=flat-square" alt="codecov">
-  </a>
-  <!-- License -->
-  <a href="https://opensource.org/licenses/BSD-3-Clause">
-    <img src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square" alt="bsd_3_license">
-  </a>
-</p>
 
 <p align="center">
   <b>le AB</b> is a Python library for AB testing analysis.
