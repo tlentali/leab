@@ -11,23 +11,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout le code
+    - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Installer uv
+    - name: Install uv
       run: |
         curl -Ls https://astral.sh/uv/install.sh | bash
         echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
-    - name: Créer l’environnement virtuel avec uv
+    - name: Create the virtual environnement using uv
       run: uv venv
 
-    - name: Activer le venv et installer les dépendances
+    - name: Activate the venv and install dépendancies
       run: |
         source .venv/bin/activate
-        uv pip install -r <(uv pip compile -g dev pyproject.toml)
+        uv pip install -r <(uv pip compile pyproject.toml pyproject.toml#dev)
 
-    - name: Lancer les tests
+    - name: Launch tests
       run: |
         source .venv/bin/activate
         pytest
