@@ -60,7 +60,7 @@ After reaching the needed sample size, you can **compare means** obtained from A
 
 ## 🛠 Installation
 
-:snake: You need to install **Python 3.6** or above.
+🐍 You need to install **Python 3.12** or above.
 
 Installation can be done by using `pip`.  
 There are [wheels available](https://pypi.org/project/leab/#files) for **Linux**, **MacOS**, and **Windows**.
@@ -104,22 +104,11 @@ Here are some benefits of using `Le AB` :
 - **Test duration** : How many days are needed for my AB test ?
 - **Rate of success** : Does the rate of success differ across two groups ?
 - **Average value** : Does the average value differ across two groups ?
-- **html auto-report** : Generate a html report ([example](https://tlentali.github.io/leReport/index.html)) for the `sample size` part.
-
-<p align="center">
-  <a href="#"><img src="./docs/_static/sample_report.gif" width="700"></a>
-</p>
-
-[Next release](https://github.com/tlentali/leab/projects/1) features :
-
-- **html auto-report** : Generate a html report for the `after` part.
-- **sequential sampling** : How many conversions are needed for a sequential AB test ?
 
 ## 🔗 Useful links
 
-- [Documentation](https://tlentali.github.io/leab/index.html)
-  - [API reference](https://tlentali.github.io/leab/content/api.html)
-  - [User guide](https://tlentali.github.io/leab/content/user-guide.html)
+- [Documentation](https://tlentali.com/docs/leab/)
+- [API reference](https://tlentali.com/docs/leab/reference/leAverage/)
 - [Issue tracker](https://github.com/tlentali/leab/issues)
 
 ## 🙏 Thanks
@@ -159,4 +148,4 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 ## 📜 License
 
-```le AB``` is free and open-source software licensed under the [3-clause BSD license](https://github.com/tlentali/leab/blob/master/LICENSE).
+`le AB` is free and open-source software licensed under the [3-clause BSD license](https://github.com/tlentali/leab/blob/master/LICENSE).
