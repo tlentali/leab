@@ -10,6 +10,6 @@ plugins:
 nav:
   - Home: index.md
   - Reference:
-      - Pycht: reference/leAverage.md
-      - Image Processing: reference/leSuccess.md
-      - Clustering: reference/leSample.md
+      - leAverage: reference/leAverage.md
+      - leSuccess: reference/leSuccess.md
+      - leSample: reference/leSample.md
