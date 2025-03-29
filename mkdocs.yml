@@ -1,0 +1,15 @@
+site_name: LeAB Documentation
+theme:
+  name: material
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+
+nav:
+  - Home: index.md
+  - Reference:
+      - Pycht: reference/leAverage.md
+      - Image Processing: reference/leSuccess.md
+      - Clustering: reference/leSample.md
