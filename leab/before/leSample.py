@@ -2,7 +2,6 @@
 import numpy as np
 from scipy.stats import norm
 
-from .leReport import leReport
 
 class leSample:
     """
@@ -14,14 +13,14 @@ class leSample:
         min_detectable_effect (float): minimum detectable effect.
         significance_level (float): alpha, percent of the time a difference will be detected, assuming one does NOT exist.
         statistical_power (float): 1-beta, percent of the time the minimum effect size will be detected, assuming it exists.
-    
+
     Example:
 
         ::
 
             >>> from leab import before
 
-            >>> ab_test = before.leSample(conversion_rate=20, 
+            >>> ab_test = before.leSample(conversion_rate=20,
             ...                           min_detectable_effect=2)
             >>> ab_test.get_size_per_variation()
             6347
@@ -64,11 +63,11 @@ class leSample:
         """
         Compute z score from alpha value.
 
-        Parameters: 
+        Parameters:
 
             alpha (float): required alpha value (alpha should already fit the required test).
 
-        Returns: 
+        Returns:
 
             Z-score.
         """
@@ -88,7 +87,7 @@ class leSample:
 
     def _get_sd1(self) -> None:
         """
-        Compute standard deviation v1.  
+        Compute standard deviation v1.
         p-baseline conversion rate which is our estimated p and d-minimum detectable change.
         """
         self.sd1 = np.sqrt(2 * self.conversion_rate * (1 - self.conversion_rate))
@@ -165,12 +164,3 @@ class leSample:
                 np.round(self.n / (self.avg_daily_total_visitor / self.nb_split))
             )
         return self.duration
-
-    def report(self, path: str = "leReport.html"):
-        build_report = leReport( 
-            baseline_conversion_rate = self.conversion_rate*100,
-            minimum_detectable_effect = self.min_detectable_effect*100,
-            sample_size = self.n,
-            path = path,
-        )
-        return build_report.build_leReport()
