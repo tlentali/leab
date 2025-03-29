@@ -25,7 +25,7 @@ jobs:
     - name: Activate the venv and install dépendancies
       run: |
         source .venv/bin/activate
-        uv pip install -r pyproject.toml --extra dev
+        uv sync
 
     - name: Launch tests
       run: |
