@@ -16,7 +16,7 @@ class Chi2Sample:
         self.get_confidence_interval()
 
     def get_success(self) -> None:
-        self.success = self.sample.sum()[0]
+        self.success = self.sample.sum().iloc[0]
 
     def get_trial(self) -> None:
         self.trial = len(self.sample)
@@ -39,7 +39,7 @@ class leSuccess(Chi2Sample):
         sample_A (pd.DataFrame): A sample data.
         sample_B (pd.DataFrame): B sample data.
         confidence_level (float): desired confidence level, default : 95%.
-        
+
     Example:
 
         ::
@@ -48,8 +48,8 @@ class leSuccess(Chi2Sample):
             >>> from leab import after
 
             >>> data = leDataset.SampleLeSuccess()
-            >>> ab_test = after.leSuccess(data.A, 
-            ...                           data.B, 
+            >>> ab_test = after.leSuccess(data.A,
+            ...                           data.B,
             ...                           confidence_level=0.95)
             >>> ab_test.sample_A.confidence_interval
 
@@ -58,9 +58,9 @@ class leSuccess(Chi2Sample):
             >>> ab_test.p_value
 
             0.25870176105718934
-            
+
             >>> ab_test.get_verdict()
-            
+
             'No significant difference'
         """
     def __init__(
