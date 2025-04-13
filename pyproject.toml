@@ -11,6 +11,10 @@ dependencies = [
     "statsmodels>=0.14.4",
 ]
 
+[project.urls]
+Repository = "https://github.com/tlentali/leab"
+Documentation = "https://tlentali.com/docs/leab/"
+
 [dependency-groups]
 dev = [
     "black>=25.1.0",
@@ -26,3 +30,27 @@ dev = [
 pythonpath = [
   "."
 ]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["leab"]
+exclude = ["tests*", "notebook*", "misc*"]
+
+[tool.bumpver]
+current_version = "0.1.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump: {old_version} → {new_version}"
+tag_message = "v{new_version}"
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"'
+]
+
+[tool.uv]
+required-version = ">=0.6.11,<0.7"
