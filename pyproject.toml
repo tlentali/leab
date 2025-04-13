@@ -1,6 +1,6 @@
 [project]
 name = "leab"
-version = "0.1.6"
+version = "0.1.7"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -41,7 +41,7 @@ include = ["leab"]
 exclude = ["tests*", "notebook*", "misc*"]
 
 [tool.bumpver]
-current_version = "0.1.6"
+current_version = "0.1.7"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "bump: {old_version} → {new_version}"
 tag_message = "v{new_version}"
