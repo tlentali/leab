@@ -40,7 +40,7 @@ Please note we have a [code of conduct](https://github.com/tlentali/leab/blob/ma
 
 ## :book: Code of Conduct
 
-Please review our [Code of Conduct](https://github.com/tlentali/leab/blob/main/CODE_OF_CONDUCT.md). It is in effect at all times. We expect it to be honored by everyone who contributes to this project. Acting like an asshole will not be tolerated.
+Please review our [Code of Conduct](https://github.com/tlentali/leab/blob/master/CODE_OF_CONDUCT.md). It is in effect at all times. We expect it to be honored by everyone who contributes to this project. Acting like an asshole will not be tolerated.
 
 ## :inbox_tray: Opening an Issue
 
@@ -48,7 +48,7 @@ Before [creating an issue](https://help.github.com/en/github/managing-your-work-
 
 ### :lock: Reporting Security Issues
 
-Review our [Security Policy](https://github.com/tlentali/leab/blob/main/SECURITY.md). **Do not** file a public issue for security vulnerabilities.
+Review our [Security Policy](https://github.com/tlentali/leab/blob/master/SECURITY.md). **Do not** file a public issue for security vulnerabilities.
 
 ### :beetle: Bug Reports and Other Issues
 
@@ -201,7 +201,7 @@ To confirm that you have read this guide and are following it as best as possibl
 
 *Many of the ideas and prose for the statements in this document were based on or inspired by work from the following communities:*
 
-- [@jessesquires](https://github.com/tlentali/leab/blob/main/CONTRIBUTING.md)
+- [@jessesquires](https://github.com/jessesquires/.github/blob/main/CODE_OF_CONDUCT.md)
 - [Alamofire](https://github.com/Alamofire/Alamofire/blob/master/CONTRIBUTING.md)
 - [CocoaPods](https://github.com/CocoaPods/CocoaPods/blob/master/CONTRIBUTING.md)
 - [Docker](https://github.com/moby/moby/blob/master/CONTRIBUTING.md)
