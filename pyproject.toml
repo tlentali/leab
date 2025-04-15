@@ -13,7 +13,7 @@ dependencies = [
 
 [project.urls]
 Repository = "https://github.com/tlentali/leab"
-Documentation = "https://tlentali.com/docs/leab/"
+Documentation = "https://tlentali.github.io/leab/"
 
 [dependency-groups]
 dev = [

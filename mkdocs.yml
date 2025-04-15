@@ -1,4 +1,6 @@
 site_name: LeAB Documentation
+use_directory_urls: false
+site_url: https://tlentali.github.io/leab/
 theme:
   name: material
 
