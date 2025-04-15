@@ -92,8 +92,8 @@ Here are some benefits of using `Le AB` :
 
 ## 🔗 Useful links
 
-- [Documentation](https://tlentali.com/docs/leab/)
-- [API reference](https://tlentali.com/docs/leab/reference/leAverage/)
+- [Documentation](https://tlentali.github.io/leab/)
+- [API reference](https://tlentali.github.io/leab/reference/leAverage/)
 - [Issue tracker](https://github.com/tlentali/leab/issues)
 
 ## 🙏 Thanks
